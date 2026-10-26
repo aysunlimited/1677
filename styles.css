@@ -161,3 +161,120 @@ dialog::backdrop{background:#071329dd}
 .console-shortcuts .small-outline{font-size:14px;font-weight:800;padding:11px 18px;border-color:#7a9ec7;background:#355b87}
 .console-shortcuts .small-outline:hover{background:#4877ac;border-color:#ffce5c}
 @media(max-width:700px){.console-shortcuts{gap:8px}.console-shortcuts .small-outline{flex:1;min-width:120px}}
+
+
+/* Version 2.2: senior-friendly display, no camera panel, larger call board */
+.app{max-width:none!important;padding:8px 10px 12px!important}
+.mast{margin-bottom:10px!important}
+.hero-board{padding:12px 12px 10px!important}
+.section-title{margin-bottom:12px!important}
+.section-title h2{font-size:34px!important}
+.count-tag{font-size:17px!important;padding:10px 16px!important}
+.number-board{grid-template-columns:74px repeat(15,minmax(0,1fr))!important;gap:5px!important;row-gap:5px!important}
+.board-letter,.board-ball{border-radius:12px!important}
+.board-letter{font-size:clamp(34px,3vw,52px)!important}
+.board-ball{font:900 clamp(22px,2vw,36px) Outfit!important;line-height:1!important}
+.legend{padding:12px 0 0!important;font-size:14px!important}
+.under-board{grid-template-columns:minmax(285px,.9fr) minmax(0,1.8fr)!important;gap:12px!important;margin-top:12px!important}
+.right-panels{display:grid!important;grid-template-columns:1.15fr .9fr!important;gap:12px!important;align-items:start!important}
+.right-panels .patterns,.right-panels .schedule{height:100%}
+.lineup-items{max-height:260px!important}
+.bottom-workspace{display:grid!important;grid-template-columns:1fr!important;gap:12px!important;margin-top:12px!important}
+.game-controls{padding:14px!important}
+.console-shortcuts{margin-bottom:10px!important}
+.console-content{display:grid!important;grid-template-columns:minmax(240px,320px) 1fr!important;gap:12px!important;align-items:end!important}
+.manual-entry label{font-size:13px!important}
+.manual-form input{width:120px!important;height:64px!important;font-size:32px!important}
+.call-button{font-size:17px!important;padding:0 20px!important}
+.main-buttons button{min-height:64px!important;font-size:18px!important;padding:10px 14px!important}
+.latest{padding:18px!important}
+.latest-ball{width:min(250px,100%)!important}
+.latest-ball small{font-size:40px!important}
+.latest-ball strong{font-size:96px!important}
+.pattern-display{grid-template-columns:120px 1fr!important;gap:18px!important}
+.mini-grid{width:120px!important}
+.pattern-description h3{font-size:28px!important}
+.pattern-description p,.lineup-copy small,.lineup-state{font-size:13px!important}
+.lineup-copy strong{font-size:16px!important}
+#eventTitle{font-size:clamp(36px,3.4vw,56px)!important}
+.overline{font-size:14px!important}
+.sub{font-size:20px!important}
+.time{font-size:30px!important}
+.status-dot,.subtle,.small-outline{font-size:15px!important}
+.business-logo{width:132px!important;height:104px!important;flex-basis:132px!important}
+@media(max-width:1190px){
+  .under-board{grid-template-columns:1fr!important}
+  .right-panels{grid-template-columns:1fr 1fr!important}
+  .console-content{grid-template-columns:1fr!important}
+  .number-board{grid-template-columns:58px repeat(15,minmax(0,1fr))!important}
+  .board-ball{font-size:clamp(18px,2vw,28px)!important}
+}
+@media(max-width:780px){
+  .app{padding:8px!important}
+  .number-board{grid-template-columns:42px repeat(15,minmax(0,1fr))!important;gap:3px!important}
+  .board-letter{font-size:24px!important}
+  .board-ball{font-size:13px!important}
+  .right-panels{grid-template-columns:1fr!important}
+  .latest-ball{width:170px!important}
+  .latest-ball small{font-size:28px!important}
+  .latest-ball strong{font-size:64px!important}
+  .console-content{grid-template-columns:1fr!important}
+  .main-buttons{display:grid!important;grid-template-columns:1fr 1fr!important}
+}
+
+
+/* Version 2.3: title matching, 7-game run of show, better BINGO centering, slightly larger board numbers */
+.hero-board .section-title h2,.patterns .section-title h2{font-size:40px!important;line-height:1.02!important}
+.number-board .board-letter{display:flex!important;align-items:center!important;justify-content:center!important;text-align:center!important;line-height:1!important;padding:0!important;font-size:clamp(36px,3.2vw,54px)!important}
+.number-board .board-ball{font:900 clamp(25px,2.25vw,40px) Outfit!important;line-height:1!important}
+.number-board .board-letter,.number-board .board-ball{height:clamp(46px,5.9vh,68px)!important}
+.right-panels .lineup-items{max-height:330px!important}
+@media(max-width:1190px){
+  .hero-board .section-title h2,.patterns .section-title h2{font-size:34px!important}
+  .number-board .board-letter,.number-board .board-ball{height:clamp(40px,5.8vh,58px)!important}
+  .number-board .board-ball{font-size:clamp(21px,2.2vw,32px)!important}
+}
+@media(max-width:780px){
+  .hero-board .section-title h2,.patterns .section-title h2{font-size:26px!important}
+  .number-board .board-letter{font-size:26px!important}
+  .number-board .board-ball{font-size:14px!important}
+  .number-board .board-letter,.number-board .board-ball{height:clamp(25px,6.2vw,44px)!important}
+}
+
+
+/* v2.4 — restore modest, matched section headings; show full logo; balance lower cards */
+.hero-board .section-title h2,
+.patterns .section-title h2,
+.schedule .section-title h2{font-size:clamp(23px,1.55vw,29px)!important;line-height:1.15!important}
+.business-logo{height:112px!important;width:112px!important;flex:0 0 112px!important;padding:3px!important;overflow:hidden!important}
+.business-logo img{width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important;transform:none!important}
+.under-board .latest{padding:14px!important;min-width:0;align-self:stretch!important}
+.under-board .latest-ball{width:clamp(165px,20vh,205px)!important;max-width:100%!important;margin:8px auto 10px!important}
+.under-board .latest-ball small{font-size:clamp(29px,3.8vh,38px)!important}
+.under-board .latest-ball strong{font-size:clamp(65px,9vh,88px)!important}
+.under-board .recent-wrap{margin-top:auto!important;padding-top:9px!important}
+.under-board .right-panels{align-items:stretch!important}
+@media(min-width:1191px){
+ .under-board .latest{height:clamp(325px,40vh,440px)!important}
+ .under-board .right-panels .patterns,.under-board .right-panels .schedule{height:clamp(325px,40vh,440px)!important}
+}
+@media(max-width:780px){
+ .hero-board .section-title h2,.patterns .section-title h2,.schedule .section-title h2{font-size:23px!important}
+ .business-logo{height:82px!important;width:82px!important;flex-basis:82px!important}
+ .under-board .latest{height:auto!important}
+ .under-board .latest-ball{width:165px!important}
+}
+
+
+/* v2.5 — keep the seven-game lineup inside its panel, enlarge glyphs only */
+@media(min-width:1191px){
+  .under-board .right-panels .schedule{display:flex!important;flex-direction:column!important;overflow:hidden!important;min-height:0!important}
+  .under-board .right-panels .schedule .lineup-items{display:block!important;flex:1 1 0!important;min-height:0!important;max-height:none!important;overflow-y:auto!important;overflow-x:hidden!important;scrollbar-gutter:stable!important;padding-right:3px!important}
+  .under-board .right-panels .schedule .section-title{flex:0 0 auto!important}
+}
+.business-logo{padding:0!important;border-width:3px!important;box-shadow:inset 0 0 0 1px #fff8!important}
+.business-logo img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;transform:scale(1.06)!important;transform-origin:center!important}
+.number-board .board-ball{font-family:Outfit,system-ui,sans-serif!important;font-size:clamp(29px,2.65vw,46px)!important;font-weight:900!important;line-height:1!important;padding:0!important}
+.number-board .board-letter{font-family:Outfit,system-ui,sans-serif!important;font-size:clamp(43px,3.65vw,64px)!important;font-weight:900!important;line-height:1!important;padding:0!important}
+@media(max-width:1190px){.number-board .board-ball{font-size:clamp(22px,2.55vw,35px)!important}.number-board .board-letter{font-size:clamp(34px,3.45vw,52px)!important}}
+@media(max-width:780px){.number-board .board-ball{font-size:clamp(13px,2.8vw,21px)!important}.number-board .board-letter{font-size:clamp(25px,4.3vw,38px)!important}}
