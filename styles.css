@@ -289,3 +289,68 @@ dialog::backdrop{background:#071329dd}
 }
 @media(max-width:1190px){.under-board .right-panels{grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-rows:auto!important}}
 @media(max-width:700px){.under-board .right-panels{grid-template-columns:1fr!important}}
+
+
+/* v2.7 — sponsor as primary header, live game label inside winning combinations */
+.title-group{display:flex!important;flex-direction:column!important;justify-content:center!important;gap:3px!important;min-width:0!important}
+.title-group .sponsor-heading{font-family:Outfit,system-ui,sans-serif!important;font-size:clamp(23px,2.35vw,38px)!important;letter-spacing:-.015em!important;line-height:1.12!important;font-weight:850!important;color:#ffcf69!important;margin:0!important;white-space:normal!important}
+.title-group .event-title-line{font:800 clamp(17px,1.65vw,26px)/1.14 Outfit,system-ui,sans-serif!important;color:#fff4e5!important;letter-spacing:-.015em!important;margin:0!important}
+.mast{min-height:104px!important;gap:14px!important}
+.business-logo{border-width:2px!important;padding:0!important;overflow:hidden!important;box-shadow:inset 0 0 0 1px #fff8!important}
+.business-logo img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;transform:scale(1.16)!important;transform-origin:center!important}
+.patterns .game-banner{display:flex;align-items:center;gap:3px 7px;flex-wrap:wrap;font:800 clamp(15px,1.13vw,20px)/1.25 Outfit,system-ui,sans-serif;color:#fff0d1;background:#345279;border:1px solid #6383b4;border-radius:9px;padding:9px 11px;margin-bottom:14px}
+.patterns .game-banner .separator{margin:0 2px;color:#ffcb5e}
+.patterns .section-title.compact{margin-top:4px!important;margin-bottom:14px!important}
+@media(max-width:780px){.mast{min-height:0!important}.title-group .sponsor-heading{font-size:clamp(17px,4vw,25px)!important}.title-group .event-title-line{font-size:clamp(15px,3.2vw,21px)!important}.patterns .game-banner{font-size:15px;padding:7px 9px;margin-bottom:11px}}
+
+
+/* v2.8 — add transparent Solar Cleaning Time banner in open header area */
+.mast{display:flex!important;align-items:center!important;justify-content:space-between!important;gap:16px!important}
+.identity{flex:0 1 auto!important;min-width:0!important}
+.hero-brand-strip{flex:1 1 460px!important;min-width:220px!important;display:flex!important;align-items:center!important;justify-content:center!important;min-height:74px!important;padding:0 8px!important;overflow:hidden!important}
+.hero-brand-strip img{display:block!important;max-width:100%!important;width:min(100%,640px)!important;max-height:92px!important;height:auto!important;object-fit:contain!important;filter:drop-shadow(0 2px 8px rgba(0,0,0,.18))!important}
+.top-actions{flex:0 0 auto!important}
+@media(max-width:1200px){
+  .hero-brand-strip{flex-basis:340px!important;min-width:180px!important}
+  .hero-brand-strip img{max-height:76px!important}
+}
+@media(max-width:900px){
+  .mast{flex-wrap:wrap!important;align-items:flex-start!important}
+  .hero-brand-strip{order:3!important;flex:1 1 100%!important;justify-content:flex-start!important;padding:2px 0 0 118px!important;min-height:54px!important}
+  .hero-brand-strip img{max-height:66px!important;width:min(100%,520px)!important}
+}
+@media(max-width:700px){
+  .hero-brand-strip{padding-left:0!important;justify-content:center!important}
+  .hero-brand-strip img{max-height:54px!important}
+}
+
+
+/* v2.9 — larger transparent sponsor banner in header */
+.hero-brand-strip{flex:1 1 560px!important;min-width:280px!important;min-height:104px!important;padding:0 10px!important}
+.hero-brand-strip img{width:min(100%,860px)!important;max-height:128px!important;height:auto!important;object-fit:contain!important}
+@media(max-width:1400px){
+  .hero-brand-strip img{width:min(100%,760px)!important;max-height:114px!important}
+}
+@media(max-width:1200px){
+  .hero-brand-strip{flex-basis:430px!important;min-height:88px!important}
+  .hero-brand-strip img{width:min(100%,640px)!important;max-height:96px!important}
+}
+@media(max-width:900px){
+  .hero-brand-strip{padding:2px 0 0 118px!important;min-height:68px!important}
+  .hero-brand-strip img{width:min(100%,560px)!important;max-height:78px!important}
+}
+@media(max-width:700px){
+  .hero-brand-strip{padding-left:0!important;min-height:56px!important}
+  .hero-brand-strip img{width:min(100%,420px)!important;max-height:58px!important}
+}
+
+/* v3.0: one-line sponsor heading alongside the banner on wide displays */
+@media(min-width:901px){
+ .mast .identity{flex:0 0 auto!important;max-width:none!important}
+ .mast .title-group{min-width:0!important}
+ .mast .title-group .sponsor-heading{font-size:clamp(20px,1.72vw,31px)!important;white-space:nowrap!important;letter-spacing:-.025em!important}
+ .mast .hero-brand-strip{min-width:170px!important;flex:1 1 420px!important}
+}
+@media(max-width:900px){
+ .mast .title-group .sponsor-heading{white-space:normal!important}
+}
